@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    style="@style/appLayoutTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="8dp" >
+    
+    <TextView
+        android:id="@+id/row_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/row_method"
+        android:text="@string/defaultAmount"
+        android:textColor="@color/darkerYellow" />
+
+    <TextView
+        android:id="@+id/row_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_amount"
+        android:layout_alignBottom="@+id/row_amount"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/darkerYellow"
+        android:text="@string/defaultMethod" />
+
+    <TextView
+        android:id="@+id/row_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_office"
+        android:layout_alignBottom="@+id/row_office"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp"
+        android:text="@string/defaultFirstName"
+        android:textColor="@color/darkerYellow" />
+
+    <TextView
+        android:id="@+id/row_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_amount"
+        android:layout_alignBottom="@+id/row_amount"
+        android:layout_centerHorizontal="true"
+        android:text="@string/defaultOffice"
+        android:textColor="@color/darkerYellow" />
+
+</RelativeLayout>

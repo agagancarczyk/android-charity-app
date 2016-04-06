@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/appLayoutTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+    
+     <ImageView
+        android:id="@+id/donate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.03"
+        android:src="@drawable/charity_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.22"
+        android:padding="0dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/editInfoBarTextView"
+                    style="@style/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/whiteColor"
+                    android:textColor="@color/darkerYellow"
+                    android:text="@string/editInfoLbl" 
+                    android:layout_marginBottom="15dp"
+                    android:textStyle="bold"
+                    android:textSize="7pt"/>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/firstName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="7pt"
+                        android:hint="@string/signupFirstname"
+                        android:textColorHint="@color/darkerYellow"
+                        android:textStyle="italic"
+                        android:background="@color/greyColor"
+                        android:inputType="textShortMessage"
+                        android:layout_marginRight="5dp"
+                        android:paddingTop="10dp" />
+
+                    <EditText
+                        android:id="@+id/lastName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="7pt"
+                        android:textStyle="italic"
+                        android:inputType="textPersonName"
+                        android:hint="@string/signupLastName"
+                        android:textColorHint="@color/darkerYellow"
+                        android:background="@color/greyColor"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="10dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:textStyle="italic"
+                    android:hint="@string/signupEmail"
+                    android:textColorHint="@color/darkerYellow"
+                    android:background="@color/greyColor"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginBottom="5dp" />
+
+                <EditText
+                    android:id="@+id/Password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:textStyle="italic"
+                    android:hint="@string/signupPassword"
+                    android:textColorHint="@color/darkerYellow"
+                    android:background="@color/greyColor"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="5dp">
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/Age"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:textStyle="italic"
+                    android:hint="@string/signupAge"
+                    android:textColorHint="@color/darkerYellow"
+                    android:background="@color/greyColor"
+                    android:inputType="number"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/AddressLineOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="7pt"
+                    android:textStyle="italic"
+                    android:hint="@string/signupAddressLineOne"
+                    android:textColorHint="@color/darkerYellow"
+                    android:background="@color/greyColor"
+                    android:inputType="text" 
+                    android:layout_marginRight="5dp"/>
+
+                <EditText
+                    android:id="@+id/AddressLineTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="7pt"
+                    android:textStyle="italic"
+                    android:hint="@string/signupAddressLineTwo"
+                    android:textColorHint="@color/darkerYellow"
+                    android:background="@color/greyColor"
+                    android:inputType="text" 
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/Nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/nationality_array"
+                    android:prompt="@string/nationality" />
+
+                <Spinner
+                    android:id="@+id/Region"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/region_array"
+                    android:prompt="@string/region" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightYellow"
+                    android:onClick="editButtonPressed"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/editButton"
+                    android:textStyle="bold"
+                    android:textColor="@color/whiteColor" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+   
+
+</LinearLayout>

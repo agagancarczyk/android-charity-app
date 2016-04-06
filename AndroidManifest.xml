@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.charity"
+    android:versionCode="3"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <application
+        android:name="app.main.CharityApp"
+        android:allowBackup="true"
+        
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/appTheme" >
+          <activity
+            android:name="app.activities.Splash"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"  
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.activities.Donate"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="app.activities.Reports"
+            android:label="@string/charityTitle" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="app.activities.Edit"
+            android:label="@string/editDetailsTitle" 
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="app.activities.NewCharity"
+            android:label="@string/createCharityTitle" >
+        </activity>
+         <activity
+            android:name="app.activities.Dashboard"
+            android:label="@string/dashboardTitle" >
+        </activity>
+        <activity
+            android:name="app.activities.Signup"
+            android:label="@string/title_activity_signup" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="app.activities.Login"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" 
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

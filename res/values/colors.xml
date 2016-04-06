@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <!-- Application Background & Font Colours -->
+    <color name="whiteColor">#ffffff</color>
+    <color name="greyColor">#E6E6E6</color>
+    <color name="lightYellow">#FECE00</color>
+    <color name="darkYellow">#FFA600</color>
+    <color name="darkerYellow">#E8B900</color>
+    <color name="veryLightYellow">#fef7d6</color>
+    <color name="darkGreyColor">#777</color>
+    <color name="blackColor">#000000</color>
+  </resources>
+
